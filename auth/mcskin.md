@@ -17,7 +17,7 @@ The character doesn't belong to me -- but the skin I've created is still CC-BY-S
 
 ### The old skin
 
-Some of you might be holding my old skin (which have been replaced). This skin file is also available under CC-BY-SA 4.0, with similar rules to the new skin, but the following rules will also apply:
+The old skin is currently not used for Minecarft skin, but you can grab it [here on MediaFire](http://www.mediafire.com/view/k46qtv1o13v2wcd/RigoLigo.png/file). This skin file is also available under CC-BY-SA 4.0, with similar rules to the new skin, but the following rules will also apply:
 
 - Contact me and get my permission before having me (i.e. my old Minecraft skin) involved in a commercial project; however, if the project is a commision from others, you will not have to do so;
 - Credit my Minecraft ID **RigoLigo** with your creation if possible.
