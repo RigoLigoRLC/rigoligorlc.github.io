@@ -1,16 +1,12 @@
-### About Me
-Student. I am an electronics enthusiast, and also write small programs.
-Currently studying at Senior High, being busy for the graduation.
-I mainly write C++ (C++11 or higher) and Python 3. Not very skillful though, But enough to handle some simple applications. Currently trying to learn Qt as well.
 
-### My Projects
-[**LC2KiCad**](https://rigoligorlc.github.io/LC2KiCad) Written in C++, enabling you to convert EasyEDA files to KiCad (functionality incomplete).
+# Rigo的胡言乱语录
 
-### Information
-Legal and authorization info. More links will be added later.
+[Go to English index >](en/index.md)
 
-[Minecraft Skin Usage](auth/mcskin.md)
+《胡言乱语录》是我高中时随笔本的标题。当时这样命名，纯粹是为了抵抗老师要求每周要有随笔的要求（😅）。不过高中毕业以来，发觉自己当时的“随笔”颇有胡言乱语的意味，没有深入的思考也没有有价值的内容。大概是进入大学之后，想得多了，也想起来自己没有一个个人blog之类的地方放自己真正意愿要写的随笔了，于是才把之前一直荒废的 GitHub Pages 利用起来，用 CNAME 挂到个人域名上当博客使。可能也会兼顾一点别的内容。
 
-### Content Licensing
+为啥不用 Hugo 之类的东西自己搭？很简单，白嫖 Pages，个人也并不懂多少运维，臭写 C++ 一枚。并且我也不太注意这个地方的互动。或许是给我自己看的，或许有有缘人能看到，但大体上要想交流，基本可以通过邮件，或者是直接用 [Discussions](https://github.com/RigoLigoRLC/rigoligorlc.github.io/discussions) 都行。
 
-The content of this GitHub Pages site can be distributed under CC-BY-SA 4.0 license unless otherwise stated.
+博客索引页 [(*/ω＼ *)](blog/index.md)
+
+其他的东西等需要再慢慢加吧 (￣▽￣)"

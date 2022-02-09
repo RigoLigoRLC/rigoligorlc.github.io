@@ -1,4 +1,4 @@
-[**< Back**](../README.md)
+[**< Back**](../index.md)
 
 ## Info about using my Minecraft skin
 
