@@ -421,4 +421,10 @@ fffff880`01058020 storport!RaDriverUnload = <no type information>
 
 等等如此。可见Miniport通过把所有的Major Function设为Storport的实现，把对设备对象的实质控制权“拱手让给”了Storport，而自己只在Storport需要时被调用（虽然加载驱动的时候还是写的他的名字）。
 
+## 一些可能有用的资料
+
+SCSI CDB命令定义：https://www.seagate.com/files/staticfiles/support/docs/manual/Interface%20manuals/100293068j.pdf
+
+ATA命令定义：https://people.freebsd.org/~imp/asiabsdcon2015/works/d2161r5-ATAATAPI_Command_Set_-_3.pdf
+
 \* **本节结束**
