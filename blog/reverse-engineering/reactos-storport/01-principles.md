@@ -1,5 +1,5 @@
 ---
-use-mermaid: true
+use_mermaid: true
 ---
 
 # 01 Storport 简述
