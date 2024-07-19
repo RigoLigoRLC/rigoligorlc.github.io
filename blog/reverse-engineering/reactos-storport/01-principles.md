@@ -1,6 +1,7 @@
 
 ---
-use-mermaid: 1
+use-mermaid: true
+
 ---
 
 # 01 Storport 简述
