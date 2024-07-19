@@ -1,5 +1,5 @@
 
-{% include mermaid.html %}
+{% include_relative mermaid.html %}
 
 # 01 Storport 简述
 
