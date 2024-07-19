@@ -1,5 +1,7 @@
 
-{% include_relative mermaid.html %}
+---
+use-mermaid: 1
+---
 
 # 01 Storport 简述
 
