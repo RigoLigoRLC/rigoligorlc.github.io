@@ -260,7 +260,7 @@ fffff880`01058020 storport!RaDriverUnload = <no type information>
     fffff880`009b0c40 00000000`00000000 nt!KxStartSystemThread+0x16
     ```
 
-- 调用Miniport的HwInitialize函数的调用栈；此函数在`DISPATCH_LEVEL`被调用；在此处，StorAHCI会检测AHCI使用的中断模式（并保存备用）、启用DPC重定向（到其他处理器；这个好像只有服务器SKU才允许使用）、启用所有Channel，还会设定`PassiveInitialization`函数（`AhciHwPassiveInitialize`；此初始化函数微软说用来初始化DPC，在`PASSIVE_LEVEL`被调用；实际Storport还在里面初始化了PoFx也就是电源管理的一些逻辑）：
+- 调用Miniport的HwInitialize函数的调用栈；此函数在`DISPATCH_LEVEL`被调用；在此处，StorAHCI会检测AHCI使用的中断模式（并保存备用）、启用DPC重定向（到其他处理器；这个好像只有服务器SKU才允许使用）、启用所有Channel，还会设定`PassiveInitialization`函数（`AhciHwPassiveInitialize`；此初始化函数微软说用来初始化DPC，在`PASSIVE_LEVEL`被调用；实际StorAHCI还在里面初始化了PoFx也就是电源管理的一些逻辑）：
 
     ```
     Breakpoint 5 hit
@@ -417,7 +417,7 @@ fffff880`01058020 storport!RaDriverUnload = <no type information>
         [15] 0 ''
     ```
 
-    CDB（SCSI的Command Descriptor Block）长度为12，第一个字节为0xA0，查询SCSI资料可知这是Report LUNs命令。在StorAHCI（源码可查，方便解读）中这会向ATA设备发送一个`IDENTIFY DEVICE`命令查询设备能力。
+    CDB（SCSI的Command Descriptor Block）长度为12，第一个字节为0xA0，查询SCSI资料可知这是Report LUNs命令。在StorAHCI中这会向ATA设备发送一个`IDENTIFY DEVICE`命令查询设备能力。
 
 等等如此。可见Miniport通过把所有的Major Function设为Storport的实现，把对设备对象的实质控制权“拱手让给”了Storport，而自己只在Storport需要时被调用（虽然加载驱动的时候还是写的他的名字）。
 
