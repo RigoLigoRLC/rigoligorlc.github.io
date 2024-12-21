@@ -1,3 +1,4 @@
 remote_theme: pages-themes/hacker@v0.2.0
 title: Rigo的胡言乱语录
 description: Rigo's Stupid Blogs Archives
+markdown: kramdown
