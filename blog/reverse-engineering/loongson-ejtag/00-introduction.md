@@ -12,3 +12,4 @@
 1. [EJTAG 电路简介](01-circuit-overview.md)
 2. [TAP 寄存器](02-tap-register.md)
 3. [官方 EJTAG 调试探头](03-official-probe.md)
+4. [EJTAG 调试原理](04-ejtag-debugging.md)
