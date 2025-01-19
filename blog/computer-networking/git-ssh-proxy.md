@@ -28,3 +28,21 @@ Host github.com
 2024/01/18 00:52:12 tcp:127.0.0.1:63219 accepted tcp:github.com:22 [socks -> proxy]
 ...
 ```
+
+2025/1/19 - 正好一年了。今天又需要在 WSL Ubuntu 上搞这个了，真巧啊。
+
+安装 socat ：
+
+```
+sudo apt install socat
+```
+
+在 `~/.ssh/config` 中添加：
+
+```
+Host github.com
+  User git
+  ProxyCommand socat - PROXY:${hostip}:%h:%p,proxyport=${hostport_http}
+```
+
+因为 WSL NAT 模式下到主机的路由是动态生成的，`hostip` 需要用 `export hostip=$(ip route | grep default | awk '{print $3}')` 生成。建议加入到 `~/.bashrc` 中。
