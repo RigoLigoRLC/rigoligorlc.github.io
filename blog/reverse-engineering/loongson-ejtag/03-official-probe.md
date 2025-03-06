@@ -181,6 +181,7 @@ FPGA 上的 MIPS 软核的总线上可以访问 FPGA 上的一些逻辑电路的
         |[31:0]|4 字节|经过处理返回的随机数。|
 
     此处返回数据的处理方式为 **（未验证）**：
+
     ```c
     uint32_t ejtag_loopback_test(uint32_t input) {
         uint16_t input_lo = input & 0xFFFF;
