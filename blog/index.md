@@ -12,4 +12,8 @@
 
 [RP2040 DMA 初始化踩坑](embedded-dev/rpi2040/rp2040-dma-init-pitfall.md) [2025-02-01]
 
+## 笔记
+
+[LoongArch64 平行宇宙 PE ABI 项目探索小记](notes/loongarch-pe-abi/index.md) [2025-04-19]
+
 (空空的) (。・∀・)ノ
