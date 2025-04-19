@@ -112,7 +112,7 @@ def CSR_Win_AArch64_CFGuard_Check : CalleeSavedRegs<(add CSR_Win_AArch64_AAPCS,
 
 一看就乐了，非常简洁只有一点点东西。它只定义了软浮点、单精度浮点、双精度浮点三种情况下的Callee-saved register，其实就是所有在ELF psABI里定义的静态寄存器。至于具体的Calling convention，后面再看看。
 
-需要了解一下LoongArch上Linux上的栈回溯方式进行参考，不然SEH什么的没法定义。
+需要了解一下LoongArch上Linux上的栈回溯方式进行参考，不然SEH什么的没法定义。ARM64的Windows unwinding数据输出参考：`llvm\lib\Target\AArch64\MCTargetDesc\AArch64WinCOFFStreamer.cpp`，`llvm\lib\MC\MCWin64EH.cpp`
 
 # Misc chat log
 
