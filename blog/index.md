@@ -12,6 +12,8 @@
 
 [RP2040 DMA 初始化踩坑](embedded-dev/rpi2040/rp2040-dma-init-pitfall.md) [2025-02-01]
 
+[龙芯 2K0300 使用 2 GiB DRAM 时的奇怪现象记录](embedded-dev/ls2k/2k0300-2gib-dram-bug.md) [2025-11-29]
+
 [龙芯 3A4000 DDR4 控制器初始化代码分析](embedded-dev/ls2k/ls_ddr4_init_analysis_by_deepseek.md) [2025-12-23]
 
 ## 笔记
