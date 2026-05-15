@@ -21,7 +21,7 @@
 2. 为你的 App Bundle 重新签名 Ad-Hoc 签名：
 
     ```
-    codesign --deep --force --sign - --entitlement ent.plist <AppBundle.app>
+    codesign --deep --force --sign - --entitlements ent.plist <AppBundle.app>
     ```
 
     签名成功后即可。
