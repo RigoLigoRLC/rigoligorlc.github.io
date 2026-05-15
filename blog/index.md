@@ -6,6 +6,8 @@
 
 [龙芯 EJTAG 逆向工程](reverse-engineering/loongson-ejtag/00-introduction.md) [2025-02-01 公开]
 
+[macOS 上内存分配侧写（Allocation Profiling）所需的权限（Entitlement）](apple/entitlement-for-allocation-profiling.md) [2026-05-16]
+
 ## 嵌入式
 
 [HPM5301 Bringup](embedded-dev/hpmicro/hpm5301-bringup.md) [2024-11-24]
