@@ -7,24 +7,24 @@
 
 1. 新建一个 `ent.plist` 文件，内容如下：
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-    <dict>
-        <key>com.apple.security.get-task-allow</key>
-        <true/>
-    </dict>
-</plist>
-```
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+        <dict>
+            <key>com.apple.security.get-task-allow</key>
+            <true/>
+        </dict>
+    </plist>
+    ```
 
 2. 为你的 App Bundle 重新签名 Ad-Hoc 签名：
 
-```
-codesign --deep --force --sign - --entitlement ent.plist <AppBundle.app>
-```
+    ```
+    codesign --deep --force --sign - --entitlement ent.plist <AppBundle.app>
+    ```
 
-签名成功后即可。
+    签名成功后即可。
 
 3. 如果要验证 App Bundle 是否确实附带了此 Entitlement，可使用工具 [Apparency](https://www.mothersruin.com/software/Apparency/) 查看。
 
