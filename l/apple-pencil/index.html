@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Touch API Test</title>
+  <style>
+    body {
+      position: absolute;
+      margin: 0;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      font-family: sans-serif;
+      font-size: 13px;
+      padding: 1em;
+      box-sizing: border-box;
+    }
+    h1 {
+      margin-top: 0;
+      color: #ccc;
+    }
+    canvas {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+    #info {
+      z-index: 1;
+      position: absolute;
+      bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Demo of Apple Pencil / 3D touch API</h1>
+  <div id="force"></div>
+  <div id="touches"></div>
+  <canvas>Sorry, your browser is too old for this demo.</canvas>
+  <div id="info">
+    <a href="https://github.com/quietshu/apple-pencil-safari-api-test" target="_blank">GitHub</a>
+    <button onclick="undoDraw()">Undo</button>
+    <button id="toggleQuadratic" onClick="toggleQuadratic()">Disable Quadratic Smoothing</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -9,4 +9,8 @@
 
 博客索引页 [(*/ω＼ *)](blog/index.md)
 
+## 小工具
+
+[Apple Pencil 在线测试](./l/apple-pencil)
+
 其他的东西等需要再慢慢加吧 (￣▽￣)"
